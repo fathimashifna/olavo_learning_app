@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "220518384587",
+    "firebase_url": "https://olavo-b9e1b.firebaseio.com",
+    "project_id": "olavo-b9e1b",
+    "storage_bucket": "olavo-b9e1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220518384587:android:19b694cb309047ffe7ac4e",
+        "android_client_info": {
+          "package_name": "com.innoxgen.olavo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220518384587-dl0f1ti5urmdk3rgm5040av6pcip1d07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3VWZ71Hgg7FAoGoxEldalLq9RrBmdsc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220518384587-dl0f1ti5urmdk3rgm5040av6pcip1d07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

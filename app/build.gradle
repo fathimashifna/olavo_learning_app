@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+android {
+
+    compileSdkVersion 29
+    useLibrary 'org.apache.http.legacy'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError true
+    }
+
+    defaultConfig {
+        applicationId "com.innoxgen.olavo"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 6
+        versionName "1.6"
+
+        testInstrumentationRunner "androidx.recyclerview_all_video.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+  implementation project( ':vimeoplayer2')
+  //  implementation project(':library')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.3.0-rc03'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-rc03'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.github.onurkagan:KSnack:1.0.2'
+    implementation 'com.github.mohammadatif:Animatoo:master'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'org.androidannotations:androidannotations-api:4.6.0'
+    implementation 'net.gotev:uploadservice:3.1'
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.4'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

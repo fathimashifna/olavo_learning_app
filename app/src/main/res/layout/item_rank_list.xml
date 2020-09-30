@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp">
+        <TextView android:layout_gravity="center" android:id="@+id/counting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:weightSum="1">
+            <TextView android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" android:layout_weight="0.5"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5655" android:layout_weight="0.5" android:textAlignment="textEnd"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

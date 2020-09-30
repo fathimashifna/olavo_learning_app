@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <androidx.cardview.widget.CardView
+           android:id="@+id/card_subject"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_70sdp"
+           android:layout_margin="@dimen/_5sdp"
+           android:layout_weight="1"
+           app:cardCornerRadius="@dimen/_5sdp">
+
+           <LinearLayout
+               android:id="@+id/linear_layout1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:background="@color/white"
+               android:padding="@dimen/_2sdp"
+               android:weightSum="2">
+
+               <ImageView
+                   android:id="@+id/imageView"
+                   android:layout_width="@dimen/_125sdp"
+                   android:layout_height="@dimen/_50sdp"
+                   android:layout_gravity="center"
+                   android:layout_weight="1.3"
+                   android:padding="@dimen/_5sdp"
+                   android:src="@drawable/mathes" />
+
+               <TextView
+                   android:id="@+id/textView"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="0.7"
+                   android:gravity="left"
+                   android:padding="@dimen/_5sdp"
+                   android:layout_marginStart="@dimen/_11sdp"
+                   android:text="Maths"
+                   android:fontFamily="@font/aileron_regular"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/_12sdp" />
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+   </LinearLayout>
+</LinearLayout>

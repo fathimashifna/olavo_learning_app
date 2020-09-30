@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.innoxgen.olavo.nav_item.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_leaderboard"
+        android:name="com.innoxgen.olavo.nav_item.LeaderBoardFragment"
+        android:label="@string/leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
+
+    <fragment
+        android:id="@+id/Course_Package_List"
+        android:name="com.innoxgen.olavo.nav_item.MyMembershipListFragment"
+        android:label="@string/Course_Package_List"
+        tools:layout="@layout/fragment_mycource" />
+
+    <fragment
+        android:id="@+id/subs_plan"
+        android:name="com.innoxgen.olavo.nav_item.PurchaseHistoryActivity"
+        android:label="@string/membership"
+        tools:layout="@layout/fragment_purchasehistory" />
+    <fragment
+        android:id="@+id/terms_condition"
+        android:name="com.innoxgen.olavo.nav_item.TermsFragment"
+        android:label="@string/Terms"
+        tools:layout="@layout/fragment_terms" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.innoxgen.olavo.nav_item.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+
+
+
+</navigation>

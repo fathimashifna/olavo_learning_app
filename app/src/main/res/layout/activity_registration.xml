@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/newlogo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_16red_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="REGISTER FOR FREE" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="@dimen/_10sdp"
+                android:focusable="true"
+                android:hint="Name"
+                android:fontFamily="@font/aileron_regular"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:padding="@dimen/_10sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:windowSoftInputMode="stateAlwaysVisible" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="@dimen/_10sdp"
+                android:focusable="true"
+                android:hint="Email Id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:padding="@dimen/_10sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:fontFamily="@font/aileron_regular"
+                android:windowSoftInputMode="stateAlwaysVisible" />
+
+            <EditText
+                android:id="@+id/edit_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/_10sdp"
+                android:focusable="true"
+                android:hint="Phone no"
+                android:imeOptions="actionGo"
+                android:inputType="number"
+                android:isScrollContainer="true"
+                android:maxLength="10"
+                android:overScrollMode="always"
+                android:padding="@dimen/_10sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:fontFamily="@font/aileron_regular"
+                android:windowSoftInputMode="stateAlwaysVisible" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:focusable="true"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:padding="@dimen/_10sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:fontFamily="@font/aileron_regular"
+                android:windowSoftInputMode="stateAlwaysVisible" />
+
+            <EditText
+                android:id="@+id/confirmpasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:focusable="true"
+                android:hint="Confirm Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:padding="@dimen/_10sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:fontFamily="@font/aileron_regular"
+                android:windowSoftInputMode="stateAlwaysVisible" />
+
+            <EditText
+                android:id="@+id/referal_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_corner"
+                android:drawableLeft="@drawable/ic_baseline"
+                android:drawablePadding="@dimen/_10sdp"
+                android:focusable="true"
+                android:hint="Referral Code(Optional)"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:padding="@dimen/_10sdp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:fontFamily="@font/aileron_regular"
+                android:windowSoftInputMode="stateAlwaysVisible" />
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/signupbackground"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:padding="@dimen/_5sdp"
+                android:fontFamily="@font/aileron_regular"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aileron_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="@string/already_member" />
+
+                <TextView
+                    android:id="@+id/Login"
+                    style="@style/text_16red_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/colorPrimaryDark" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

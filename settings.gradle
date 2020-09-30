@@ -1,0 +1,2 @@
+include ':app',  ':vimeoplayer2'
+//rootProject.name = "Olavo_new"

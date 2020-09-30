@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20sdp">
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/app_name"
+        style="@style/text_18black_bold" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/dynamic_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Do You Want To Logout From This App ?"
+        style="@style/text_14light_gray_" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/dialogButtonCancel"
+            android:background="@drawable/greenbackground"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text=" cancel "
+            android:fontFamily="@font/aileron_regular"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/dialogButtonOK"
+            android:background="@drawable/signupbackground"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="30dp"
+            android:text=" Ok "
+            android:fontFamily="@font/aileron_regular"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

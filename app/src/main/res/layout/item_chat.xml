@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12/09/2020"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_11sdp"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:id="@+id/admin_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:paddingRight="60dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:paddingBottom="10dp">
+
+        <View
+            android:id="@+id/avatar"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_person"
+            android:visibility="gone"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/avatar"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:paddingBottom="4dp"
+            android:visibility="gone"
+            android:text="Admin" />
+
+        <RelativeLayout
+            android:id="@+id/rel_ad_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:background="@drawable/their_message"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/admin_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleview"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="How are you doing?  wrap."
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/admin_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_msg"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="2:00" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cust_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/my_message">
+
+        <RelativeLayout
+            android:id="@+id/rel_cstm_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/customer_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleview"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="wrap"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/my_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customer_msg"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="2:00" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/img_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/my_message">
+
+        <RelativeLayout
+            android:id="@+id/rel_cstm_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:clipToPadding="false">
+
+            <ImageView
+                android:id="@+id/customer_img"
+                android:layout_width="@dimen/_155sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_2sdp" />
+
+            <TextView
+                android:id="@+id/img_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customer_img"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="2:00" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
